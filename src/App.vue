@@ -4,11 +4,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import 'element-plus/lib/theme-chalk/display.css'
 
 export default defineComponent({
   name: 'App',
-  components: {
-
+  created() {
+    document.getElementsByTagName('title')[0].innerText = import.meta.env.VITE_APP_NAME
   }
 })
 </script>

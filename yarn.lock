@@ -66,6 +66,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.4.4":
+  version: 2.9.2
+  resolution: "@popperjs/core@npm:2.9.2"
+  checksum: cc4de8b46fc190805619224f1c683bee6a162276430af3728d35087099ad83a80da3c11c4eac7cb2b5aa2fa59d4c7c689e211a3e955136588ed6dedb5bff32c5
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^4.1.0":
+  version: 4.1.1
+  resolution: "@rollup/pluginutils@npm:4.1.1"
+  dependencies:
+    estree-walker: ^2.0.1
+    picomatch: ^2.2.2
+  checksum: 218d681f54ce2b372647124a7da260c8e4ff1ec2888ab128a71f67857ef791ca773d5fd122398fdc3cd652245d997bcf5f04dbad299f6df050bf3d62c3811bc3
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:1":
   version: 1.1.2
   resolution: "@tootallnate/once@npm:1.1.2"
@@ -425,6 +442,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"async-validator@npm:^3.4.0":
+  version: 3.5.2
+  resolution: "async-validator@npm:3.5.2"
+  checksum: 6a5bfda8cdb6a1ac4253bf1e2a813ee111faff82c8d502e981398a2abd043819ff780715ccddf4652a9dc77666f823315240972b3cc861ccef4923f3e8bd24f3
+  languageName: node
+  linkType: hard
+
 "babel-walk@npm:3.0.0-canary-5":
   version: 3.0.0-canary-5
   resolution: "babel-walk@npm:3.0.0-canary-5"
@@ -516,6 +540,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"camel-case@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "camel-case@npm:4.1.2"
+  dependencies:
+    pascal-case: ^3.1.2
+    tslib: ^2.0.3
+  checksum: 0b8dcfb424c9497e45984b88ef005c66bdf8e877e36365aedfc3cf73182684fde5a14cf2c526579c0351a5f27dc39a00f1edecc25d43606075fea948c504e37f
+  languageName: node
+  linkType: hard
+
+"capital-case@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "capital-case@npm:1.0.4"
+  dependencies:
+    no-case: ^3.0.4
+    tslib: ^2.0.3
+    upper-case-first: ^2.0.2
+  checksum: cce3d8f8f72d04d20e03f3724294edf2e727e71300617357a071cde16972b8f8170d485babf9453928a8fbd145df656d2e0256d6d475859356c78c3849fa12ac
+  languageName: node
+  linkType: hard
+
+"change-case@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "change-case@npm:4.1.2"
+  dependencies:
+    camel-case: ^4.1.2
+    capital-case: ^1.0.4
+    constant-case: ^3.0.4
+    dot-case: ^3.0.4
+    header-case: ^2.0.4
+    no-case: ^3.0.4
+    param-case: ^3.0.4
+    pascal-case: ^3.1.2
+    path-case: ^3.0.4
+    sentence-case: ^3.0.4
+    snake-case: ^3.0.4
+    tslib: ^2.0.3
+  checksum: dfc3d5afcb442b8dfabfd2068d9e845b396f98ba72f4b2c702b8afe935e56d6a0b48281866f91fe77cf669d99bfea6176079d5d1033f6ce574c6a97a5862bcf9
+  languageName: node
+  linkType: hard
+
 "character-parser@npm:^2.2.0":
   version: 2.2.0
   resolution: "character-parser@npm:2.2.0"
@@ -595,6 +660,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"constant-case@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "constant-case@npm:3.0.4"
+  dependencies:
+    no-case: ^3.0.4
+    tslib: ^2.0.3
+    upper-case: ^2.0.2
+  checksum: c2ca78e785a0ca46cbb4cb5ea7d64c2ff8e6184ca8a46cab39ec5bedf51a42f22d019d0aaeb00afe0e73e0d6a628d6bd9b85294856047c2fae794934888b8a10
+  languageName: node
+  linkType: hard
+
 "constantinople@npm:^4.0.1":
   version: 4.0.1
   resolution: "constantinople@npm:4.0.1"
@@ -628,7 +704,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0":
+"dayjs@npm:1.x":
+  version: 1.10.6
+  resolution: "dayjs@npm:1.10.6"
+  checksum: 474d21162c12d269d40e90cb3ce049bb2d987b8038c173224c8eb5805d6f38f07d11875779a81e282d8f889d3803c4bbb91d09b6ee08a1a44ae60ec26afd8f45
+  languageName: node
+  linkType: hard
+
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.3.2":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -699,6 +782,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dot-case@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "dot-case@npm:3.0.4"
+  dependencies:
+    no-case: ^3.0.4
+    tslib: ^2.0.3
+  checksum: 2d93626464927f533eaa66ba8c9b3a2dede6a324b5020fb90c46779ed629d50542f642aaac578e035e5cb141473c5f2c50eac232a8d8bf820ab471358d7bf587
+  languageName: node
+  linkType: hard
+
+"element-plus@npm:^1.0.2-beta.65":
+  version: 1.0.2-beta.65
+  resolution: "element-plus@npm:1.0.2-beta.65"
+  dependencies:
+    "@popperjs/core": ^2.4.4
+    async-validator: ^3.4.0
+    dayjs: 1.x
+    lodash: ^4.17.20
+    mitt: ^2.1.0
+    normalize-wheel: ^1.0.1
+    resize-observer-polyfill: ^1.5.1
+  peerDependencies:
+    vue: 3.1.x
+  checksum: 9238a09b6ba787d92134e78a5af92f89716cf8da2a503c14078b4219edc06e2434ddd0ec230fdc58616ce7b126e0cd431651793a34bb78329d5a09d80ccdfb36
+  languageName: node
+  linkType: hard
+
 "emmet@npm:^2.3.0":
   version: 2.3.4
   resolution: "emmet@npm:2.3.4"
@@ -743,6 +853,13 @@ __metadata:
   version: 2.0.3
   resolution: "err-code@npm:2.0.3"
   checksum: 14e09e9990bcd0dd8e91881bf6e0ac6177b9cd72404951e443e8052f6272f276dbe1f3a34c7802fd6dee5276b34134b091665e18cebc9e1ce0a4519561f16c44
+  languageName: node
+  linkType: hard
+
+"es-module-lexer@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "es-module-lexer@npm:0.6.0"
+  checksum: 6c7c64adab628ee53a9d90d65db13e574e1132db808d43d9a9f912944c97d36dc05d5bafed79245c8e9880cf2bcf0fef54663364fd08c8d59053717a4a69db7f
   languageName: node
   linkType: hard
 
@@ -905,6 +1022,16 @@ fsevents@~2.3.2:
   version: 2.0.0
   resolution: "hash-sum@npm:2.0.0"
   checksum: 9d833f05e8b9cb318ff0154c3864b0d2aaf4bd675a4b65377fb4d12eed13505423deb45e85b484affd71da3d3c8b8fe30e83bf81ca9a1dd6f3523043d9281e34
+  languageName: node
+  linkType: hard
+
+"header-case@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "header-case@npm:2.0.4"
+  dependencies:
+    capital-case: ^1.0.4
+    tslib: ^2.0.3
+  checksum: 1cc640a98a59224db2b1c3ed2ecf2a9755db445b103462d4a30185e825ec6d61fbcc6b607a0d87b6f71b33a9f0080f6900420da528ced5cb661b4de75c36dd4d
   languageName: node
   linkType: hard
 
@@ -1192,6 +1319,22 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.17.20":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: 4983720b9abca930a4a46f18db163d7dad8dd00dbed6db0cc7b499b33b717cce69f80928b27bbb1ff2cbd3b19d251ee90669a8b5ea466072ca81c2ebe91e7468
+  languageName: node
+  linkType: hard
+
+"lower-case@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "lower-case@npm:2.0.2"
+  dependencies:
+    tslib: ^2.0.3
+  checksum: aabaca9cef65f7564a1005b625664527e4d169e363101e65773f8f6ff2fdcf09884a3bc02990cd7a62cf05f3538114af25ee7bef553f1ca3208c8a77ac75cbfa
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^5.1.1":
   version: 5.1.1
   resolution: "lru-cache@npm:5.1.1"
@@ -1337,6 +1480,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"mitt@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "mitt@npm:2.1.0"
+  checksum: 549fd125e961ca7265e4d1a7c04b9b56787ac2c2093c594528a8afa3003fd3a17ddf55ae346ddf3e1c05084d441f198d6a55bd770915f4578d5843c9e4b6df16
+  languageName: node
+  linkType: hard
+
 "mkdirp@npm:^1.0.3, mkdirp@npm:^1.0.4":
   version: 1.0.4
   resolution: "mkdirp@npm:1.0.4"
@@ -1366,6 +1516,16 @@ fsevents@~2.3.2:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: e6dea1da5a593ffdc8cf2676d1d02f0626f07a54a5947a7a1f5ff1fd07901b2f53044c285e98b87eb367f016fde285fd8785d54a2dceeab9c3721f4e618f8326
+  languageName: node
+  linkType: hard
+
+"no-case@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "no-case@npm:3.0.4"
+  dependencies:
+    lower-case: ^2.0.2
+    tslib: ^2.0.3
+  checksum: 84db4909caec37504c6655f995a004067f8733be8cd8d849f1578661b60a1685e086325fa4e1a5e8ce94e7416c1d0f037e2a00f635a14457183de80ab4fc7612
   languageName: node
   linkType: hard
 
@@ -1404,6 +1564,13 @@ fsevents@~2.3.2:
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
   checksum: 215a701b471948884193628f3e38910353abf445306b519c42c2a30144b8beb8ca0a684da97bfc2ee11eb168c35c776d484274da4bd8f213d2b22f70579380ee
+  languageName: node
+  linkType: hard
+
+"normalize-wheel@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "normalize-wheel@npm:1.0.1"
+  checksum: 457bb19f52e952fb4835219ee5b689471c6aff190c5e62a2a150a1cd7c38ec1f65a3fdfa11951291642b4f3840227f4d05c0cd197305823a53e5ed165a824a4f
   languageName: node
   linkType: hard
 
@@ -1451,6 +1618,36 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"param-case@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "param-case@npm:3.0.4"
+  dependencies:
+    dot-case: ^3.0.4
+    tslib: ^2.0.3
+  checksum: 879358f67167dfe48f4cd5b3c888456b8d7d30daf8bff1e354eece6e8bedb9fb27250bc34fd32390cb9d890677b9b907dcf89808ee3ebcd947d4c1db9f650127
+  languageName: node
+  linkType: hard
+
+"pascal-case@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "pascal-case@npm:3.1.2"
+  dependencies:
+    no-case: ^3.0.4
+    tslib: ^2.0.3
+  checksum: 31708cecab221482edc81e2bd9b9d8282d72d4f1443b31f39725aa23768c5e42d93c4c014f1bc90f7f074e2a70d5091e4892ea370e550affc9ccf1d33c900bcd
+  languageName: node
+  linkType: hard
+
+"path-case@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "path-case@npm:3.0.4"
+  dependencies:
+    dot-case: ^3.0.4
+    tslib: ^2.0.3
+  checksum: 4f4a2ac7f621e70a531c7ece246a410ce000f0cd279086f3cbaa9d28fb912f36fb4b4e9f524a535bf1975b6a404a35851c7b463d0453de4b5e0ecf69d4b8aed3
+  languageName: node
+  linkType: hard
+
 "path-is-absolute@npm:^1.0.0":
   version: 1.0.1
   resolution: "path-is-absolute@npm:1.0.1"
@@ -1465,7 +1662,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1":
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2":
   version: 2.3.0
   resolution: "picomatch@npm:2.3.0"
   checksum: 80113a0fb70cfa62730d5aa3fd3d45b76bf3985f8494080ab2de1cc1fa3ba96d77990c7553a81401e16c51c0eb19c27cf5bc94f2196155090f26c8a167968001
@@ -1753,6 +1950,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"resize-observer-polyfill@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "resize-observer-polyfill@npm:1.5.1"
+  checksum: ba14bfaf584eda299eafd6a06233a65c76586bc2bab3cdfdd1edd25fc6479f4270788ddd082e65390049b3ed542558f02bdf1f123bd912624de5b11d48857ac8
+  languageName: node
+  linkType: hard
+
 "resolve@^1.15.1, resolve@^1.20.0":
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
@@ -1841,6 +2045,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"sentence-case@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "sentence-case@npm:3.0.4"
+  dependencies:
+    no-case: ^3.0.4
+    tslib: ^2.0.3
+    upper-case-first: ^2.0.2
+  checksum: 39bf70b87190064fdccd357ebd78ea9196a260ee6b87893b5099aa54af92f5a49676fa9f94c7ccf501a3fa0d72e3438237c110022b6cec760d6dd921b1bf16f7
+  languageName: node
+  linkType: hard
+
 "set-blocking@npm:~2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
@@ -1859,6 +2074,16 @@ fsevents@~2.3.2:
   version: 4.1.0
   resolution: "smart-buffer@npm:4.1.0"
   checksum: 00a23d82a20eced9622cbba18ba781f9f8968ccfa70af7a33336ae55f54651c073aa072084c521f7e78199767e5b3584a0bbf3a47bb60e3e5b79ea4fc1ca61a1
+  languageName: node
+  linkType: hard
+
+"snake-case@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "snake-case@npm:3.0.4"
+  dependencies:
+    dot-case: ^3.0.4
+    tslib: ^2.0.3
+  checksum: f087328861d81e6476996b837b91f9daaa063fd03cb2f0cd35276c5aaa03e7ac7acfd94721028ae5119193a6fc0a9c91123ea7a43e59650f076dac06428c8bf2
   languageName: node
   linkType: hard
 
@@ -1975,9 +2200,11 @@ fsevents@~2.3.2:
     "@types/node": ^16.4.6
     "@vitejs/plugin-vue": ^1.3.0
     "@vue/compiler-sfc": ^3.0.5
+    element-plus: ^1.0.2-beta.65
     sass: ^1.36.0
     typescript: ^4.3.2
     vite: ^2.4.4
+    vite-plugin-style-import: ^1.0.1
     vue: ^3.0.5
     vue-router: 4.0.10
     vue-tsc: ^0.2.2
@@ -2018,6 +2245,13 @@ fsevents@~2.3.2:
   version: 1.0.0
   resolution: "token-stream@npm:1.0.0"
   checksum: 8949318c923ec252cd99585016d7a4f8870bb2149a6fa30dd4719f2829edf4f8a56eb20c3a51322ec1a56563bcac066edcde75fe8512225111882f88d6f4615a
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.0.3":
+  version: 2.3.0
+  resolution: "tslib@npm:2.3.0"
+  checksum: 7b4fc9feff0f704743c3760f5d8d708f6417fac6458159e63df3a6b1100f0736e3b99edb9fe370f274ad15160a1f49ff05cb49402534c818ff552c48e38c3e6e
   languageName: node
   linkType: hard
 
@@ -2066,10 +2300,43 @@ typescript@^4.3.2:
   languageName: node
   linkType: hard
 
+"upper-case-first@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "upper-case-first@npm:2.0.2"
+  dependencies:
+    tslib: ^2.0.3
+  checksum: b485994181366f0aced25ed7e3344ae3bfc06ce5430b4a8ec89a552bf57206a9471705561fa37075ee8a1058b5ebc91570746bf6f74f351aa1ab6156dfad5618
+  languageName: node
+  linkType: hard
+
+"upper-case@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "upper-case@npm:2.0.2"
+  dependencies:
+    tslib: ^2.0.3
+  checksum: db9adfeca3ba0ca98f197d8cbf5b97f424c30ac2bb5e672e68033cf2ea747e66d1e2ebc3921e947dad672869c65c6cb5257fe703142bca9c3aeefe802a0bc2e8
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.2, util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 73c2b1cf0210ccac300645384d8443cabbd93194117b2dc1b3bae8d8279ad39aedac857e020c4ea505e96a1045059c7359db3df6a9df0be6b8584166c9d61dc9
+  languageName: node
+  linkType: hard
+
+"vite-plugin-style-import@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "vite-plugin-style-import@npm:1.0.1"
+  dependencies:
+    "@rollup/pluginutils": ^4.1.0
+    change-case: ^4.1.2
+    debug: ^4.3.2
+    es-module-lexer: ^0.6.0
+    magic-string: ^0.25.7
+  peerDependencies:
+    vite: ">=2.0.0"
+  checksum: d2849074b988d57dcf199b10812f7dd65d54aadcc66be3e9556904b732cf404074afaadf73f3b5a3b0aa84b310b48d9a5478a78362754352347693d623fc6460
   languageName: node
   linkType: hard
 
