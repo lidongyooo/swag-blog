@@ -2,12 +2,12 @@
   <el-container>
     <el-header>
       <el-row class="header-information">
-        <el-col :span="10" :xs="24">
+        <el-col :sm="24" :lg="{span:10, offset:0}" :xs="24">
           <div class="header-information-avatar">
             <div class="header-information-avatar-inner"></div>
           </div>
         </el-col>
-        <el-col :span="10" :offset="1" :xs="{span:24,offset:0}">
+        <el-col :sm="{span:24,offset:0}" :lg="{span:10, offset:1}" :xs="{span:24,offset:0}">
           <div class="header-introduction">
             <div class="header-introduction-job">
               A Go/PHP developer
@@ -32,28 +32,52 @@
           <el-col class="articles-top-title" :span="4" :xs="24">
             Articles
           </el-col>
-          <el-col class="articles-top-tags" :span="12" :offset="8" :xs="{span:24, offset:0}">
-            <div class="articles-top-tag">111111</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
-            <div class="articles-top-tag">2222222</div>
+          <el-col class="articles-tags" :span="12" :offset="8" :xs="{span:24, offset:0}">
+            <div class="articles-tag">111111</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">2222222</div>
           </el-col>
         </el-row>
+        <div class="articles-list">
+          <div class="articles-list-item">
+            <a href="/" class="articles-list-item-tile">
+              xxxxxxxxxxxxxxxxxx
+            </a>
+            <div class="articles-list-item-information">
+              <div class="articles-list-item-information-tags">
+                <div class="articles-tag">111111</div>
+                <div class="articles-tag">222222</div>
+                <div class="articles-tag">333333</div>
+              </div>
+              <div class="articles-list-item-information-datetime">
+                一年前
+              </div>
+            </div>
+          </div>
+
+          <div class="articles-list-item">
+            <a href="/" class="articles-list-item-tile">
+              哈哈是的所杀害的
+            </a>
+            <div class="articles-list-item-information">
+              <div class="articles-list-item-information-tags">
+                <div class="articles-tag">111111</div>
+                <div class="articles-tag">222222</div>
+                <div class="articles-tag">333333</div>
+              </div>
+              <div class="articles-list-item-information-datetime">
+                一年前
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </el-main>
   </el-container>
@@ -79,8 +103,68 @@ export default defineComponent({
   min-height: 100vh;
 
   .el-main{
+    margin-top: 10vh;
 
     .articles{
+
+      .articles-tag{
+        font-size: 12px;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #666666;
+        padding: 2px 7px;
+        border-radius: 3px;
+        border: 1px solid transparent;
+        margin: 8px 0px 0px 8px;
+        line-height: 1.5em;
+        cursor: default;
+      }
+
+      .articles-tag:hover{
+        color: #222222;
+      }
+
+      .articles-tag_active{
+        color: #222222;
+      }
+
+      .articles-list{
+        margin-top: 2vh;
+
+        .articles-list-item{
+          padding-bottom: 20px;
+          margin-top: 30px;
+          border-bottom: 1px solid #555;
+          display: flex;
+          flex-direction: column;
+
+          .articles-list-item-tile{
+            text-decoration: none;
+            padding-left: 8px;
+            font-size: 32px;
+            color: #f5f5f5;
+            font-weight: bold;
+          }
+
+          .articles-list-item-information{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            .articles-list-item-information-tags{
+              display: flex;
+            }
+
+            .articles-list-item-information-datetime{
+              padding-right: 8px;
+              align-self: flex-end;
+              font-weight: 400;
+              cursor: default;
+            }
+          }
+        }
+      }
+
 
       .articles-top{
         padding-bottom: 10px;
@@ -90,21 +174,9 @@ export default defineComponent({
           font-weight: bold;
         }
 
-        .articles-top-tags{
+        .articles-tags{
           display: flex;
           flex-wrap: wrap;
-
-          .articles-top-tag{
-            font-size: 12px;
-            font-weight: 500;
-            color: #d5d5d5;
-            background-color: #222;
-            padding: 0 10px;
-            line-height: 23px;
-            border: 2px solid #007ced;
-            border-radius: 30px;
-            margin: 10px 0px 0px 10px;
-          }
         }
       }
     }
@@ -114,7 +186,6 @@ export default defineComponent({
     margin-top: 10vh;
     display: block;
     height: auto;
-    padding-bottom: 10vh;
 
     .header-information{
       width: 100%;
@@ -192,8 +263,12 @@ export default defineComponent({
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1200px){
   .el-container {
+
+    .el-main{
+      margin-top: 3vh;
+    }
 
     .header-information-avatar{
       width: 230px !important;
@@ -208,7 +283,7 @@ export default defineComponent({
     .articles-top{
       text-align: center;
 
-      .articles-top-tags{
+      .articles-tags{
         justify-content: center;
       }
     }
