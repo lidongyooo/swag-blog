@@ -2,12 +2,12 @@
   <el-container>
     <el-header>
       <el-row class="header-information">
-        <el-col :span="10" :xs="{span:20, offset:2}">
+        <el-col :span="10" :xs="24">
           <div class="header-information-avatar">
             <div class="header-information-avatar-inner"></div>
           </div>
         </el-col>
-        <el-col :span="10" :offset="1" :xs="{span:20, offset:2}">
+        <el-col :span="10" :offset="1" :xs="{span:24,offset:0}">
           <div class="header-introduction">
             <div class="header-introduction-job">
               A Go/PHP developer
@@ -27,6 +27,34 @@
       </el-row>
     </el-header>
     <el-main>
+      <div class="articles">
+        <el-row class="articles-top">
+          <el-col class="articles-top-title" :span="4" :xs="24">
+            Articles
+          </el-col>
+          <el-col class="articles-top-tags" :span="12" :offset="8" :xs="{span:24, offset:0}">
+            <div class="articles-top-tag">111111</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+            <div class="articles-top-tag">2222222</div>
+          </el-col>
+        </el-row>
+      </div>
     </el-main>
   </el-container>
 </template>
@@ -48,11 +76,49 @@ export default defineComponent({
 .el-container{
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
+
+  .el-main{
+
+    .articles{
+
+      .articles-top{
+        padding-bottom: 10px;
+
+        .articles-top-title{
+          font-size: 21px;
+          font-weight: bold;
+        }
+
+        .articles-top-tags{
+          display: flex;
+          flex-wrap: wrap;
+
+          .articles-top-tag{
+            font-size: 12px;
+            font-weight: 500;
+            color: #d5d5d5;
+            background-color: #222;
+            padding: 0 10px;
+            line-height: 23px;
+            border: 2px solid #007ced;
+            border-radius: 30px;
+            margin: 10px 0px 0px 10px;
+          }
+        }
+      }
+    }
+  }
 
   .el-header{
     margin-top: 10vh;
+    display: block;
+    height: auto;
+    padding-bottom: 10vh;
 
     .header-information{
+      width: 100%;
+      justify-content: center;
 
       .el-col{
         height: 100%;
@@ -137,6 +203,14 @@ export default defineComponent({
     .header-introduction{
       text-align: center;
       margin-top: 0 !important;
+    }
+
+    .articles-top{
+      text-align: center;
+
+      .articles-top-tags{
+        justify-content: center;
+      }
     }
   }
 }
