@@ -10,7 +10,7 @@
         <el-col :span="10" :offset="1" :xs="{span:20, offset:2}">
           <div class="header-introduction">
             <div class="header-introduction-job">
-              一位优雅的路人
+              A Go/PHP developer
             </div>
             <div class="header-introduction-name">
               Lidongyooo
@@ -20,7 +20,7 @@
             </div>
             <div class="header-introduction-operations">
               <a href="/">Download Resume</a>
-              <a href="/" style="margin-left: 20px">Contact</a>
+              <a href="/" style="margin-left: 10px">Contact</a>
             </div>
           </div>
         </el-col>
