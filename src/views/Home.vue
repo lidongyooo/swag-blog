@@ -79,15 +79,32 @@
           </div>
         </div>
       </div>
+      <div class="pagination">
+        <pagination v-model="page" />
+      </div>
     </el-main>
   </el-container>
 </template>
 
 <script lang="ts">
 import {defineComponent} from "vue";
+import Pagination from "@/components/Pagination.vue"
 
 export default defineComponent({
   name : "Home",
+  components: {
+    Pagination
+  },
+  data(){
+    return {
+      page : 1
+    }
+  },
+  watch: {
+    page(newValue, oldValue){
+      console.log(newValue, oldValue)
+    }
+  },
   mounted() {
 
   }
@@ -101,9 +118,16 @@ export default defineComponent({
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
+  padding-bottom: 100px;
 
   .el-main{
     margin-top: 10vh;
+
+    .pagination{
+      display: flex;
+      justify-content: center;
+      margin-top: 2vh;
+    }
 
     .articles{
 
@@ -117,7 +141,8 @@ export default defineComponent({
         border: 1px solid transparent;
         margin: 8px 0px 0px 8px;
         line-height: 1.5em;
-        cursor: default;
+        cursor: pointer;
+        user-select: none;
       }
 
       .articles-tag:hover{

@@ -21,7 +21,7 @@ export default defineComponent({
 }
 
 #app{
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   background-color: #222222;
   color: #F5F5F5;
