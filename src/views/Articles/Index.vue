@@ -1,5 +1,8 @@
 <template>
   <div class="page">
+    <div class="title">
+      Gin 源码刨析
+    </div>
     <article class="markdown-body">
 
     </article>
@@ -22,6 +25,16 @@ export default {
 .page{
   background-color: #0D1117;
   padding: 30px 0px;
+  min-height: calc(100vh - 62px);
+
+  .title{
+    text-align: center;
+    font-size: 32px;
+    color: #f5f5f5;
+    font-weight: 600;
+    font-style: normal;
+    padding-bottom: 35px;
+  }
 }
 
 .markdown-body {

@@ -1,8 +1,6 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
 import Home from '@/views/Home.vue'
-import ArticlesCreate from '@/views/Articles/Create.vue'
 import Articles from '@/views/Articles/Index.vue'
-
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -12,10 +10,6 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/articles/:id',
         component: Articles
-    },
-    {
-        path: '/articles/create',
-        component: ArticlesCreate
     },
 ]
 
