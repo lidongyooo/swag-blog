@@ -118,7 +118,7 @@ export default defineComponent({
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 
   .el-main{
     margin-top: 10vh;
@@ -126,7 +126,7 @@ export default defineComponent({
     .pagination{
       display: flex;
       justify-content: center;
-      margin-top: 2vh;
+      margin-top: 50px;
     }
 
     .articles{
