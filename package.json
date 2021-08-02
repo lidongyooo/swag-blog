@@ -7,7 +7,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "duckling-markdown-css": "^4.0.1",
     "element-plus": "^1.0.2-beta.65",
+    "vditor": "^3.8.6",
     "vue": "^3.0.5",
     "vue-router": "4.0.10"
   },

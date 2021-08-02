@@ -47,7 +47,7 @@
         </el-row>
         <div class="articles-list">
           <div class="articles-list-item">
-            <a href="/" class="articles-list-item-tile">
+            <a href="/articles/1" class="articles-list-item-tile">
               xxxxxxxxxxxxxxxxxx
             </a>
             <div class="articles-list-item-information">
