@@ -23,7 +23,7 @@ export default {
 <style scoped lang="scss">
 
 .page{
-  background-color: #0D1117;
+  background-color: #22272E;
   padding: 30px 0px;
   min-height: calc(100vh - 62px);
 
@@ -43,7 +43,7 @@ export default {
   max-width: 80vw;
   margin: 0 auto;
   padding: 45px;
-  border: 1px solid #30363D;
+  border: 1px solid #444C56;
 }
 
 @media (max-width: 767px) {
