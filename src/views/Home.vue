@@ -16,7 +16,8 @@
               Lidongyooo
             </div>
             <div class="header-introduction-content">
-              Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.
+              <p>Backend：Linux \ Docker \ Go \ PHP \ MySQL \ Redis \ Nginx \ Laravel \ Gin</p>
+              <p>Frontend：HTML 5 \ CSS 3 \ Vue 3 \ NodeJs \ JavaScript \ Element Plus</p>
             </div>
             <div class="header-introduction-operations">
               <a href="/">Download Resume</a>
@@ -33,47 +34,22 @@
             Articles
           </el-col>
           <el-col class="articles-tags" :span="12" :offset="8" :xs="{span:24, offset:0}">
-            <div class="articles-tag">111111</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
-            <div class="articles-tag">2222222</div>
+            <div class="articles-tag">PHP</div>
+            <div class="articles-tag">Laravel</div>
           </el-col>
         </el-row>
         <div class="articles-list">
           <div class="articles-list-item">
             <a href="/articles/1" class="articles-list-item-tile">
-              xxxxxxxxxxxxxxxxxx
+              Laravel 幂等组件 - Larvel-Idempotent
             </a>
             <div class="articles-list-item-information">
               <div class="articles-list-item-information-tags">
-                <div class="articles-tag">111111</div>
-                <div class="articles-tag">222222</div>
-                <div class="articles-tag">333333</div>
+                <div class="articles-tag">PHP</div>
+                <div class="articles-tag">Laravel</div>
               </div>
               <div class="articles-list-item-information-datetime">
-                一年前
-              </div>
-            </div>
-          </div>
-
-          <div class="articles-list-item">
-            <a href="/" class="articles-list-item-tile">
-              哈哈是的所杀害的
-            </a>
-            <div class="articles-list-item-information">
-              <div class="articles-list-item-information-tags">
-                <div class="articles-tag">111111</div>
-                <div class="articles-tag">222222</div>
-                <div class="articles-tag">333333</div>
-              </div>
-              <div class="articles-list-item-information-datetime">
-                一年前
+                两小时前
               </div>
             </div>
           </div>
