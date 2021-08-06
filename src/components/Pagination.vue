@@ -1,6 +1,6 @@
 <template>
   <ul class="pagination">
-    <li class="pagination-item" v-for="n in pages" :class="[page === n ? 'pagination-item_active' : '']" @click="page = n">
+    <li class="pagination-item" v-for="n in pages" :class="[pager.page === n ? 'pagination-item_active' : '']" @click="pageChange(n)">
       {{n}}
     </li>
   </ul>
@@ -12,25 +12,18 @@ import {defineComponent} from "vue";
 export default defineComponent({
   name: "Pagination",
   props: {
-    limit: {
-      type: Number,
-      default: 10
-    },
-    count: {
-      type: Number,
-      default: 100
-    },
     modelValue: {
-      type: Number
+      type: Object
     }
   },
   methods: {
-    pageChange(page){
-      this.$emit('change', page)
+    pageChange(n){
+      this.pager.page = n
+      this.$emit('pageClick', this.pager.page)
     }
   },
   computed: {
-    page : {
+    pager : {
       get(){
         return this.modelValue
       },
@@ -39,7 +32,7 @@ export default defineComponent({
       }
     },
     pages(){
-      return Math.ceil(this.count / this.limit)
+      return Math.ceil(this.pager.count / this.pager.limit)
     }
   }
 })

@@ -5,6 +5,7 @@ import styleImport from 'vite-plugin-style-import'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+
   plugins: [vue(),
     styleImport({
       libs: [
@@ -26,5 +27,14 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src')
     },
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: import.meta.env.VITE_APP_URI,
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      },
+    }
   }
 })

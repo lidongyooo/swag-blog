@@ -34,29 +34,34 @@
             Articles
           </el-col>
           <el-col class="articles-tags" :span="12" :offset="8" :xs="{span:24, offset:0}">
-            <div class="articles-tag">PHP</div>
-            <div class="articles-tag">Laravel</div>
+            <div class="articles-tag" :class="[tagId === 0 ? 'articles-tag_active' : '']" @click="tagIdSwitch(0)">
+              All
+            </div>
+            <div class="articles-tag" :class="[tagId === tag.id ? 'articles-tag_active' : '']" v-for="tag in tags" @click="tagIdSwitch(tag.id)">
+              {{ tag.name }}
+            </div>
           </el-col>
         </el-row>
         <div class="articles-list">
-          <div class="articles-list-item">
-            <a href="/articles/1" class="articles-list-item-tile">
-              Laravel 幂等组件 - Larvel-Idempotent
+          <div class="articles-list-item" v-for="article in articles">
+            <a :href="'/articles/'+article.id" class="articles-list-item-tile">
+              {{ article.title }}
             </a>
             <div class="articles-list-item-information">
               <div class="articles-list-item-information-tags">
-                <div class="articles-tag">PHP</div>
-                <div class="articles-tag">Laravel</div>
+                <div v-for="tag in article.tags"  class="articles-tag" :class="[tagId === tag.id ? 'articles-tag_active' : '']" @click="tagIdSwitch(tag.id)">
+                  {{ tag.name }}
+                </div>
               </div>
               <div class="articles-list-item-information-datetime">
-                两小时前
+                {{ article.created_at }}
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="pagination">
-        <pagination v-model="page" />
+        <pagination v-model="pager" @page-click="pageClick"/>
       </div>
     </el-main>
   </el-container>
@@ -65,6 +70,7 @@
 <script lang="ts">
 import {defineComponent} from "vue";
 import Pagination from "@/components/Pagination.vue"
+import request from "@/common/request";
 
 export default defineComponent({
   name : "Home",
@@ -73,16 +79,44 @@ export default defineComponent({
   },
   data(){
     return {
-      page : 1
+      pager: {
+        count: 20,
+        page: 1,
+        limit: 10,
+      },
+      tagId : 0,
+      tags : [],
+      articles : [],
     }
   },
-  watch: {
-    page(newValue, oldValue){
-      console.log(newValue, oldValue)
-    }
-  },
-  mounted() {
+  created() {
+    request.get("/tags").then(res => {
+      res = res.data
+      if (res.code === 200) {
+        this.tags = res.data
+      }
+    })
 
+    this.getArticles()
+  },
+  methods: {
+    pageClick(){
+      this.getArticles()
+    },
+    getArticles(){
+      request.get("/articles?page="+this.pager.page+"&tag_id="+this.tagId).then(res => {
+        res = res.data
+        if (res.code === 200) {
+          this.articles = res.data.data
+          this.pager.count = res.data.count
+          this.pager.limit = res.data.limit
+        }
+      })
+    },
+    tagIdSwitch(id){
+      this.tagId = id
+      this.getArticles()
+    }
   }
 })
 
