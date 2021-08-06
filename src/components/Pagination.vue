@@ -40,7 +40,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .pagination {
-  min-width: 100px;
   border: 2px solid #B72841;
   border-radius: 100px;
   padding: 10px 25px;
@@ -54,8 +53,6 @@ export default defineComponent({
   flex-wrap: wrap;
 
   .pagination-item{
-    position: relative;
-    right: 5px;
     user-select: none;
     cursor: pointer;
     padding: 5px 10px;

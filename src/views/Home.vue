@@ -115,6 +115,7 @@ export default defineComponent({
     },
     tagIdSwitch(id){
       this.tagId = id
+      this.pager.page = 1
       this.getArticles()
     }
   }

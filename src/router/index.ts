@@ -1,6 +1,8 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
 import Home from '@/views/Home.vue'
 import Article from '@/views/Articles/Show.vue'
+import ArticleCreate from '@/views/Articles/Create.vue'
+import PageNotFound from "@/views/PageNotFound.vue"
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -8,8 +10,16 @@ const routes: Array<RouteRecordRaw> = [
         component: Home
     },
     {
-        path: '/articles/:id',
+        path: '/articles/create',
+        component: ArticleCreate
+    },
+    {
+        path: '/articles/:id(\\d+)',
         component: Article
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        component: PageNotFound
     },
 ]
 

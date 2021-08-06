@@ -17,7 +17,10 @@ export default defineComponent({
   name: "Show",
   data(){
     return {
-      article : {}
+      article : {
+        title: '',
+        body: ''
+      }
     }
   },
   created() {
@@ -26,6 +29,8 @@ export default defineComponent({
       if (res.code === 200) {
         this.article = res.data
       }
+    }).catch((res) => {
+      this.article.title = '未找到此文章'
     })
   }
 })
