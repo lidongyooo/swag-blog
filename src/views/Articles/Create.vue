@@ -46,12 +46,16 @@ export default defineComponent({
   },
   mounted() {
     document.getElementsByTagName("textarea")[0].style.height = "200px"
+    document.getElementsByTagName("textarea")[0].style.border = "1px solid black"
+    document.getElementsByTagName("input")[0].style.border = "1px solid black"
+    document.getElementsByTagName("input")[1].style.border = "1px solid black"
   }
 })
 </script>
 
 <style lang="scss" scoped>
  .el-container{
+   background: #FFFFFF;
    color: #222222 !important;
    width: 900px;
    margin: 0 auto;
@@ -60,6 +64,10 @@ export default defineComponent({
    .el-form{
      width: 500px;
      height: 500px;
+
+     .el-input__inner{
+       border: 1px solid red;
+     }
    }
  }
 </style>

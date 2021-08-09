@@ -80,7 +80,7 @@ export default defineComponent({
   data(){
     return {
       pager: {
-        count: 20,
+        count: 10,
         page: 1,
         limit: 10,
       },
