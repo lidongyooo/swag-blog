@@ -291,7 +291,7 @@ export default defineComponent({
           width: 100%;
           background-repeat: no-repeat;
           background-size: cover;
-          background-image: url("@/assets/avatar.jpg");
+          background-image: url("http://cdn.lidong-myself.cn/avatar.jpg");
         }
       }
 

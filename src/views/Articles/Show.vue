@@ -3,7 +3,7 @@
     <div class="title">
       {{ article.title }}
     </div>
-    <article class="markdown-body" v-html="article.body">
+    <article class="markdown-body" v-html="article.body_html">
     </article>
   </div>
 </template>
@@ -19,7 +19,8 @@ export default defineComponent({
     return {
       article : {
         title: '',
-        body: ''
+        body: '',
+        body_html: ''
       }
     }
   },
